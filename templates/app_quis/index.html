@@ -1,12 +1,162 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index QUIS</title>
-</head>
-<body>
-    <h4>ALOOOU QUIS</h4>
-</body>
-</html>
+{% extends 'index.html' %}
+
+{% block card-title %}
+Simulado
+{% endblock card-title %}
+
+{% block content %}
+<style>
+    @keyframes fadeIn {
+        0% { opacity: 0; margin-left: 20px;}
+        100% { opacity: 1; } 
+    }
+    @keyframes fadeOut {
+        0% { opacity: 1; } 
+        100% { opacity: 0; margin-left: 20px;}
+    }
+    .fadeIn {
+        animation: fadeIn .8s ease-in-out;
+    }
+    .fadeOut {
+        animation: fadeOut .8s ease-in-out;
+    }
+</style>
+<div>
+    <div id="questoes" actual-question="1">
+        <div class="fadeIn questao w-100" id="questao-1">
+            <p><strong>Questão 1</strong></p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsum distinctio officiis, deserunt vitae quaerat illo repellat ullam placeat aut quis ipsa nulla amet dolore itaque at delectus qui dolores.
+            </p>
+            <div>
+                <p>a) Alternativa A</p>
+                <p>b) Alternativa B</p>
+                <p>c) Alternativa C</p>
+                <p>d) Alternativa D</p>
+                <p>e) Alternativa E</p>
+            </div>
+        </div>
+        <div class="d-none questao w-100" id="questao-2">
+            <p><strong>Questão 2</strong></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod similique esse dolorem natus fugit quam dolorum, aut alias suscipit omnis exercitationem provident cupiditate minus fuga temporibus maiores, quasi expedita ullam.
+            </p>
+            <div>
+                <p>a) Alternativa A</p>
+                <p>b) Alternativa B</p>
+                <p>c) Alternativa C</p>
+                <p>d) Alternativa D</p>
+                <p>e) Alternativa E</p>
+            </div>
+        </div>
+        <div class="d-none questao w-100" id="questao-3">
+            <p><strong>Questão 3</strong></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim commodi atque iste, itaque, ab nulla earum ipsa quia quod, nobis illum animi nisi. Libero eligendi commodi voluptatem rem quod!
+            </p>
+            <div>
+                <p>a) Alternativa A</p>
+                <p>b) Alternativa B</p>
+                <p>c) Alternativa C</p>
+                <p>d) Alternativa D</p>
+                <p>e) Alternativa E</p>
+            </div>
+        </div>
+        <div class="d-none questao w-100" id="questao-4">
+            <p><strong>Questão 4</strong></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates odio officia labore earum tempore nemo inventore, quae sint possimus cupiditate, recusandae ullam optio rem minus, beatae nostrum quibusdam quas! Voluptatem!
+            </p>
+            <div>
+                <p>a) Alternativa A</p>
+                <p>b) Alternativa B</p>
+                <p>c) Alternativa C</p>
+                <p>d) Alternativa D</p>
+                <p>e) Alternativa E</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-right">
+        <button type="button" id="btn-voltar" class="btn btn-danger d-none">Voltar</button>
+        <button type="button" id="btn-pular" class="btn btn-secondary disabled ml-2">Pular</button>
+        <button type="button" id="btn-responder" class="btn btn-primary ml-2">Responder</button>
+    </div>
+</div>
+{% endblock content %}
+
+{% block scripts %}
+<script>
+    const btnResponder = document.getElementById('btn-responder')
+    const btnVoltar = document.getElementById('btn-voltar')
+    const divQuestoes = document.getElementById('questoes')
+    btnResponder.addEventListener("click", () => {
+        const indexQuest = Number.parseInt(divQuestoes.getAttribute('actual-question'))
+        const questoes = Array.from(document.getElementsByClassName('questao'))
+        const indexNextQuest = indexQuest==questoes.length ? 1 : indexQuest+1
+        questoes.forEach((quest, idx) => {
+            if (indexQuest-1 == idx) {
+                quest.classList.remove('fadeIn')
+                quest.classList.add('fadeOut')
+                setTimeout(() => {
+                    quest.classList.add('d-none')
+                    quest.classList.remove('fadeOut')
+                }, 795)
+            }
+        })
+        const nextQuest = questoes[indexNextQuest-1]
+        setTimeout(() => {
+            nextQuest.classList.remove('d-none')
+            nextQuest.classList.add('fadeIn')
+            if (indexNextQuest==1) {
+                btnVoltar.classList.remove('fadeIn')
+                btnVoltar.classList.add('fadeOut')
+                setTimeout(()=>{
+                    btnVoltar.classList.add('d-none')
+                }, 795)
+            } else if(btnVoltar.classList.contains('d-none')) {
+                btnVoltar.classList.remove('d-none')
+                btnVoltar.classList.remove('fadeOut')
+                btnVoltar.classList.add('fadeIn')
+            }
+        }, 795)
+
+        divQuestoes.setAttribute('actual-question', `${indexNextQuest}`)
+    })
+    btnVoltar.addEventListener("click", () => {
+        const indexQuest = Number.parseInt(divQuestoes.getAttribute('actual-question'))
+        const questoes = Array.from(document.getElementsByClassName('questao'))
+        const indexPrevQuest = indexQuest==1 ? questoes.length : indexQuest-1
+        questoes.forEach((quest, idx) => {
+            if (indexQuest-1 == idx) {
+                quest.classList.remove('fadeIn')
+                quest.classList.add('fadeOut')
+                setTimeout(() => {
+                    quest.classList.add('d-none')
+                    quest.classList.remove('fadeOut')
+                }, 795)
+            }
+        })
+        const prevQuest = questoes[indexPrevQuest-1]
+        setTimeout(() => {
+            prevQuest.classList.remove('d-none')
+            prevQuest.classList.add('fadeIn')
+            if (indexPrevQuest==1) {
+                btnVoltar.classList.remove('fadeIn')
+                btnVoltar.classList.add('fadeOut')
+                setTimeout(()=>{
+                    btnVoltar.classList.add('d-none')
+                }, 795)
+            } else if(btnVoltar.classList.contains('d-none')) {
+                btnVoltar.classList.remove('d-none')
+                btnVoltar.classList.remove('fadeOut')
+                btnVoltar.classList.add('fadeIn')
+            }
+        }, 795)
+
+        divQuestoes.setAttribute('actual-question', `${indexPrevQuest}`)
+        
+    })
+</script>
+{% endblock scripts %}
+    
