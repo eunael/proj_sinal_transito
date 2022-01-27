@@ -22,60 +22,31 @@ Simulado
     }
 </style>
 <div>
-    <div id="questoes" actual-question="1">
-        <div class="fadeIn questao w-100" id="questao-1">
-            <p><strong>Questão 1</strong></p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsum distinctio officiis, deserunt vitae quaerat illo repellat ullam placeat aut quis ipsa nulla amet dolore itaque at delectus qui dolores.
-            </p>
-            <div>
-                <p>a) Alternativa A</p>
-                <p>b) Alternativa B</p>
-                <p>c) Alternativa C</p>
-                <p>d) Alternativa D</p>
-                <p>e) Alternativa E</p>
+    
+    {% for questao in questoes %}
+        <div id="questoes" actual-question="1">
+            
+            {% if questao.index > 1 %}
+                <div class="d-none questao w-100" id="questao-1">
+            {% else %}
+                <div class="fadeIn questao w-100" id="questao-1">
+            {% endif %}
+                <p><strong>Questão {{ questao.index }}</strong></p>
+                <p>
+                    {{ questao.pergunta.enunciado }}
+                </p>
+                <div>
+                    {% for altern in questao.alternativas %}
+                        <p>
+                            <input type="radio" name="qst-{{questao.index}}" id="">
+                            <label for="">{{ altern.conteudo }}</label>
+                        </p>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-        <div class="d-none questao w-100" id="questao-2">
-            <p><strong>Questão 2</strong></p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod similique esse dolorem natus fugit quam dolorum, aut alias suscipit omnis exercitationem provident cupiditate minus fuga temporibus maiores, quasi expedita ullam.
-            </p>
-            <div>
-                <p>a) Alternativa A</p>
-                <p>b) Alternativa B</p>
-                <p>c) Alternativa C</p>
-                <p>d) Alternativa D</p>
-                <p>e) Alternativa E</p>
-            </div>
-        </div>
-        <div class="d-none questao w-100" id="questao-3">
-            <p><strong>Questão 3</strong></p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim commodi atque iste, itaque, ab nulla earum ipsa quia quod, nobis illum animi nisi. Libero eligendi commodi voluptatem rem quod!
-            </p>
-            <div>
-                <p>a) Alternativa A</p>
-                <p>b) Alternativa B</p>
-                <p>c) Alternativa C</p>
-                <p>d) Alternativa D</p>
-                <p>e) Alternativa E</p>
-            </div>
-        </div>
-        <div class="d-none questao w-100" id="questao-4">
-            <p><strong>Questão 4</strong></p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates odio officia labore earum tempore nemo inventore, quae sint possimus cupiditate, recusandae ullam optio rem minus, beatae nostrum quibusdam quas! Voluptatem!
-            </p>
-            <div>
-                <p>a) Alternativa A</p>
-                <p>b) Alternativa B</p>
-                <p>c) Alternativa C</p>
-                <p>d) Alternativa D</p>
-                <p>e) Alternativa E</p>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+        
     
     <div class="text-right">
         <button type="button" id="btn-voltar" class="btn btn-danger d-none">Voltar</button>
