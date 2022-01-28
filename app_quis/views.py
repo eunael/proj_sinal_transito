@@ -1,5 +1,5 @@
 from random import shuffle
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse
 
 from app_quis.models import Alternativa, Pergunta, RelPerguntaAlternativa
@@ -37,3 +37,30 @@ def index(request):
     # return HttpResponse(view_obj(list_perg))
 
     return render(request, 'app_quis/index.html', data)
+
+def enviaSimulado(request):
+    if request.method == 'POST':
+        '''if request.POST.get('name') != "" and request.POST.get('email') != "" and request.POST.get('subject') != "" and request.POST.get('message') != "":
+            blog = Blog.objects.filter(id=request.POST.get('id_blog')).first()
+            contact = Contact()
+            contact.blog_id = blog
+            contact.name = request.POST.get('name')
+            contact.email = request.POST.get('email')
+            contact.subject = request.POST.get('subject')
+            contact.message = request.POST.get('message')
+            contact.save()
+
+            return redirect('blog_index')
+        return HttpResponse("Você não preencheu algum campo 🤔")'''
+        list_keys = list(request.POST.dict().keys())
+        list_vals = list(request.POST.dict().values())
+        qst_resp = []
+
+        for i, key in enumerate(list_keys):
+            if('perg' in key):
+                qst_resp.append({'id_pegunta': str(list_vals[i])})
+            elif('resp' in key):
+                qst_resp[int(key[-1])-1]['id_alternativa'] = list_vals[i]
+
+        return HttpResponse(qst_resp)
+    return HttpResponse("Não é métofo post.")

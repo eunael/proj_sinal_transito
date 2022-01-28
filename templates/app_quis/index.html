@@ -22,49 +22,76 @@ Simulado
     }
 </style>
 <div>
-    
-    {% for questao in questoes %}
-        <div id="questoes" actual-question="1">
-            
-            {% if questao.index > 1 %}
-                <div class="d-none questao w-100" id="questao-1">
-            {% else %}
-                <div class="fadeIn questao w-100" id="questao-1">
-            {% endif %}
-                <p><strong>Questão {{ questao.index }}</strong></p>
-                <p>
-                    {{ questao.pergunta.enunciado }}
-                </p>
-                <div>
-                    {% for altern in questao.alternativas %}
-                        <p>
-                            <input type="radio" name="qst-{{questao.index}}" id="">
-                            <label for="">{{ altern.conteudo }}</label>
-                        </p>
-                    {% endfor %}
+    <form action="{% url 'quis.envia-simulado' %}" method="post" id="form-simulado">
+        {% csrf_token %}
+        <div id="container-questoes" actual-question="1">
+            {% for questao in questoes %}
+                {% if questao.index > 1 %}
+                    <div class="d-none questao w-100" id="questao-1">
+                {% else %}
+                    <div class="fadeIn questao w-100" id="questao-1">
+                {% endif %}
+                    <input type="hidden" name="perg-{{questao.index}}" value="{{questao.pergunta.id}}">
+                    <p><strong>Questão {{ questao.index }}</strong></p>
+                    <p>
+                        {{ questao.pergunta.enunciado }}
+                    </p>
+                    <div>
+                        {% for altern in questao.alternativas %}
+                            <p>
+                                <input type="radio" name="resp-{{questao.index}}" id="" value="{{altern.id}}">
+                                <label for="">{{ altern.conteudo }}</label>
+                            </p>
+                        {% endfor %}
+                    </div>
                 </div>
-            </div>
+            {% endfor %}
         </div>
-    {% endfor %}
         
-    
-    <div class="text-right">
-        <button type="button" id="btn-voltar" class="btn btn-danger d-none">Voltar</button>
-        <button type="button" id="btn-pular" class="btn btn-secondary disabled ml-2">Pular</button>
-        <button type="button" id="btn-responder" class="btn btn-primary ml-2">Responder</button>
-    </div>
+        <div class="text-right">
+            <button type="button" id="btn-voltar" class="btn btn-danger d-none">Voltar</button>
+            <!-- <button type="button" id="btn-pular" class="btn btn-secondary disabled ml-2">Pular</button> -->
+            <button type="button" id="btn-responder" class="btn btn-primary ml-2">Responder</button>
+        </div>
+    </form>
 </div>
 {% endblock content %}
 
 {% block scripts %}
 <script>
+    const divQuestoes = document.getElementById('container-questoes')
     const btnResponder = document.getElementById('btn-responder')
     const btnVoltar = document.getElementById('btn-voltar')
-    const divQuestoes = document.getElementById('questoes')
+    
+    const formSimulado = document.getElementById('form-simulado')
+    var formValido = () => {
+        const respostas = Array.from(formSimulado.getElementsByTagName('input')).filter(item => {
+            if (item.getAttribute('type') && item.checked){
+                return item
+            }
+            return
+        })
+
+        return (respostas.length == divQuestoes.children.length)
+    }
+
     btnResponder.addEventListener("click", () => {
-        const indexQuest = Number.parseInt(divQuestoes.getAttribute('actual-question'))
+        if (formValido()){
+            formSimulado.submit()
+        }
         const questoes = Array.from(document.getElementsByClassName('questao'))
+        const indexQuest = Number.parseInt(divQuestoes.getAttribute('actual-question'))
+        const atualQuest = divQuestoes.children[indexQuest-1]
         const indexNextQuest = indexQuest==questoes.length ? 1 : indexQuest+1
+        const nextQuest = questoes[indexNextQuest-1]
+
+        let alternativas = Array.from(atualQuest.getElementsByTagName('input'))
+        
+        const checkRespo = alternativas.some((alt)=>alt.checked)
+        if (!checkRespo) {
+            return "selecione uma alternativa"
+        }
+        
         questoes.forEach((quest, idx) => {
             if (indexQuest-1 == idx) {
                 quest.classList.remove('fadeIn')
@@ -75,7 +102,7 @@ Simulado
                 }, 795)
             }
         })
-        const nextQuest = questoes[indexNextQuest-1]
+
         setTimeout(() => {
             nextQuest.classList.remove('d-none')
             nextQuest.classList.add('fadeIn')
@@ -94,7 +121,11 @@ Simulado
 
         divQuestoes.setAttribute('actual-question', `${indexNextQuest}`)
     })
+    
     btnVoltar.addEventListener("click", () => {
+        if (formValido()){
+            formSimulado.submit()
+        }
         const indexQuest = Number.parseInt(divQuestoes.getAttribute('actual-question'))
         const questoes = Array.from(document.getElementsByClassName('questao'))
         const indexPrevQuest = indexQuest==1 ? questoes.length : indexQuest-1
