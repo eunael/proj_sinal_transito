@@ -1,10 +1,29 @@
 {% extends 'index.html' %}
 
 {% block card-title %}
-Simulado
+<div class="d-flex justify-content-between">
+    <h5>Simulado</h5>
+    <span href="#" class="text d-none" id="contador">1 de 30</span>
+</div>
 {% endblock card-title %}
 
 {% block content %}
+<div class="modal fade" id="finalizar-simu" tabindex="-1" aria-labelledby="finalizar-simu" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Enviar gabarito</h5>
+            </div>
+            <div class="modal-body">
+                <p>Deseja finalizar o simulado?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="enviar-form">Finalizar</button>
+            </div>
+        </div>
+    </div>
+</div>
 <style>
     @keyframes fadeIn {
         0% { opacity: 0; margin-left: 20px;}
@@ -24,13 +43,13 @@ Simulado
 <div>
     <form action="{% url 'quis.envia-simulado' %}" method="post" id="form-simulado">
         {% csrf_token %}
+        <div class="fadeIn text-center w-100" id="iniciar-simu">
+            <h5>Pronto(a) para iniciar o simulado?</h5>
+            <button type="button" class="btn btn-primary" id="btn-iniciar">Começar</button>
+        </div>
         <div id="container-questoes" actual-question="1">
             {% for questao in questoes %}
-                {% if questao.index > 1 %}
-                    <div class="d-none questao w-100" id="questao-1">
-                {% else %}
-                    <div class="fadeIn questao w-100" id="questao-1">
-                {% endif %}
+                <div class="d-none questao w-100" id="questao-1">
                     <input type="hidden" name="perg-{{questao.index}}" value="{{questao.pergunta.id}}">
                     <p><strong>Questão {{ questao.index }}</strong></p>
                     <p>
@@ -48,10 +67,15 @@ Simulado
             {% endfor %}
         </div>
         
-        <div class="text-right">
-            <button type="button" id="btn-voltar" class="btn btn-danger d-none">Voltar</button>
-            <!-- <button type="button" id="btn-pular" class="btn btn-secondary disabled ml-2">Pular</button> -->
-            <button type="button" id="btn-responder" class="btn btn-primary ml-2">Responder</button>
+        <div class="text-right d-none row" id="div-btns">
+            <div id="alerta" class="col-6 text-left invisible">
+                <span class="text-danger"><i class="fas fa-exclamation-circle"></i> Selecione uma alternativa.</span>
+            </div>
+            <div class="col-6 text-right">
+                <button type="button" id="btn-voltar" class="btn btn-danger d-none">Voltar</button>
+                <!-- <button type="button" id="btn-pular" class="btn btn-secondary disabled ml-2">Pular</button> -->
+                <button type="button" id="btn-responder" class="btn btn-primary ml-2">Avançar</button>
+            </div>
         </div>
     </form>
 </div>
@@ -59,6 +83,9 @@ Simulado
 
 {% block scripts %}
 <script>
+    const contador = document.getElementById('contador')
+    const divBtns = document.getElementById('div-btns')
+    const divAleta = document.getElementById('alerta')
     const divQuestoes = document.getElementById('container-questoes')
     const btnResponder = document.getElementById('btn-responder')
     const btnVoltar = document.getElementById('btn-voltar')
@@ -74,23 +101,47 @@ Simulado
 
         return (respostas.length == divQuestoes.children.length)
     }
+    const setContador = (atual, fim) => {
+        contador.innerText = `${atual} de ${fim} questões`
+    }
 
     btnResponder.addEventListener("click", () => {
-        if (formValido()){
-            formSimulado.submit()
-        }
         const questoes = Array.from(document.getElementsByClassName('questao'))
         const indexQuest = Number.parseInt(divQuestoes.getAttribute('actual-question'))
         const atualQuest = divQuestoes.children[indexQuest-1]
         const indexNextQuest = indexQuest==questoes.length ? 1 : indexQuest+1
         const nextQuest = questoes[indexNextQuest-1]
-
+        
         let alternativas = Array.from(atualQuest.getElementsByTagName('input'))
         
         const checkRespo = alternativas.some((alt)=>alt.checked)
         if (!checkRespo) {
-            return "selecione uma alternativa"
+            divAleta.classList.remove('invisible')
+            divAleta.classList.add('visible')
+            return
         }
+        if (divAleta.classList.contains('visible')){
+            divAleta.classList.remove('visible')
+            divAleta.classList.add('invisible')
+        }
+        
+        if (formValido() && indexQuest==questoes.length){
+            btnResponder.innerText = 'Finalizar'
+            if (btnResponder.classList.contains('btn-primary')){
+                btnResponder.classList.remove('btn-primary')
+                btnResponder.classList.add('btn-success')
+            }
+            btnResponder.setAttribute('data-bs-toggle', 'modal')
+            btnResponder.setAttribute('data-bs-target', '#finalizar-simu')
+            return
+        } else {
+            btnResponder.innerText = 'Avançar'
+            if(btnResponder.hasAttribute('data-bs-toggle')) btnResponder.removeAttribute('data-bs-toggle')
+            if(btnResponder.hasAttribute('data-bs-target')) btnResponder.removeAttribute('data-bs-target')
+        }
+
+        divQuestoes.setAttribute('actual-question', `${indexNextQuest}`)
+        setContador(indexNextQuest, questoes.length)
         
         questoes.forEach((quest, idx) => {
             if (indexQuest-1 == idx) {
@@ -119,16 +170,21 @@ Simulado
             }
         }, 795)
 
-        divQuestoes.setAttribute('actual-question', `${indexNextQuest}`)
     })
     
     btnVoltar.addEventListener("click", () => {
-        if (formValido()){
-            formSimulado.submit()
-        }
         const indexQuest = Number.parseInt(divQuestoes.getAttribute('actual-question'))
         const questoes = Array.from(document.getElementsByClassName('questao'))
         const indexPrevQuest = indexQuest==1 ? questoes.length : indexQuest-1
+        
+        btnResponder.innerText = 'Avançar'
+        if (btnResponder.classList.contains('btn-success')){
+            btnResponder.classList.remove('btn-success')
+            btnResponder.classList.add('btn-primary')
+        }
+        if(btnResponder.hasAttribute('data-bs-toggle')) btnResponder.removeAttribute('data-bs-toggle')
+        if(btnResponder.hasAttribute('data-bs-target')) btnResponder.removeAttribute('data-bs-target')
+
         questoes.forEach((quest, idx) => {
             if (indexQuest-1 == idx) {
                 quest.classList.remove('fadeIn')
@@ -157,7 +213,36 @@ Simulado
         }, 795)
 
         divQuestoes.setAttribute('actual-question', `${indexPrevQuest}`)
+        setContador(indexPrevQuest, questoes.length)
+    })
         
+    const btnIniciar = document.getElementById("btn-iniciar")
+    btnIniciar.addEventListener('click', () => {
+        const divIniciar = document.getElementById('iniciar-simu')
+        divIniciar.classList.add('fadeOut')
+        setTimeout(() => {
+            divIniciar.remove()
+        }, 795)
+        
+        setTimeout(() => {
+            contador.classList.remove("d-none")
+            contador.classList.add("fadeIn")
+            setContador(1, divQuestoes.children.length)
+
+            divBtns.classList.remove('d-none')
+            divBtns.classList.add('fadeIn')
+
+            const indexQuest = Number.parseInt(divQuestoes.getAttribute('actual-question'))
+            const atualQuest = divQuestoes.children[indexQuest-1]
+        
+            atualQuest.classList.remove('d-none')
+            atualQuest.classList.add('fadeIn')
+        }, 795)
+    })
+
+    const btnEnviarForm = document.getElementById('enviar-form')
+    btnEnviarForm.addEventListener('click', () => {
+        if(formValido()) formSimulado.submit()
     })
 </script>
 {% endblock scripts %}

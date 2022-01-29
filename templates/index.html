@@ -20,12 +20,14 @@
             </div>
         </header>
         <!-- content -->
-        <main role="main" class="inner text-left">
+        <main role="main" class="inner text-left mt-5 mb-5">
             <div class="h-100">
                 <div class="d-flex justify-content-center">
                     <div class="card w-50">
                         <div class="card-body">
-                            <h5 class="card-title">{% block card-title %}{% endblock card-title %}</h5>
+                            <div class="card-title">
+                                {% block card-title %}{% endblock card-title %}
+                            </div>
                             <hr>
                             <div class="card-content">
                                 {% block content %}{% endblock content %}
