@@ -18,8 +18,8 @@
                 <p>Deseja finalizar o simulado?</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" id="enviar-form">Finalizar</button>
+                <button type="button" class="btn btn-secondary shadow" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary shadow" id="enviar-form">Finalizar</button>
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
         {% csrf_token %}
         <div class="fadeIn text-center w-100" id="iniciar-simu">
             <h5>Pronto(a) para iniciar o simulado?</h5>
-            <button type="button" class="btn btn-primary" id="btn-iniciar">Começar</button>
+            <button type="button" class="btn btn-primary shadow" id="btn-iniciar">Começar</button>
         </div>
         <div id="container-questoes" actual-question="1">
             {% for questao in questoes %}
@@ -72,9 +72,9 @@
                 <span class="text-danger"><i class="fas fa-exclamation-circle"></i> Selecione uma alternativa.</span>
             </div>
             <div class="col-6 text-right">
-                <button type="button" id="btn-voltar" class="btn btn-danger d-none">Voltar</button>
+                <button type="button" id="btn-voltar" class="btn btn-danger d-none shadow">Voltar</button>
                 <!-- <button type="button" id="btn-pular" class="btn btn-secondary disabled ml-2">Pular</button> -->
-                <button type="button" id="btn-responder" class="btn btn-primary ml-2">Avançar</button>
+                <button type="button" id="btn-responder" class="btn btn-primary ml-2 shadow">Avançar</button>
             </div>
         </div>
     </form>
