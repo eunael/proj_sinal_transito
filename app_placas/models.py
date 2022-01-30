@@ -3,9 +3,9 @@ from django.db import models
 
 class Placa(models.Model):
     imagem = models.TextField(blank=True, null=True)
-    codigo = models.CharField(max_length=50, blank=True, null=True)
+    codigo = models.CharField(max_length=255, blank=True, null=True)
     descricao = models.TextField(blank=True, null=True)
-    categoria = models.CharField(max_length=100, blank=True, null=True)
+    categoria = models.CharField(max_length=250, blank=True, null=True)
 
     def to_dict(instance):
         opts = instance._meta
