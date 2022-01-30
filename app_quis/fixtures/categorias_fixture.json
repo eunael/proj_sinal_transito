@@ -1,0 +1,37 @@
+[
+    {
+        "model": "app_quis.Categoria",
+        "pk": 1,
+        "fields": {
+            "nome": "Direção Defensiva"
+        }
+    },
+    {
+        "model": "app_quis.Categoria",
+        "pk": 2,
+        "fields": {
+            "nome": "Legislação de Trânsito"
+        }
+    },
+    {
+        "model": "app_quis.Categoria",
+        "pk": 3,
+        "fields": {
+            "nome": "Mecânica"
+        }
+    },
+    {
+        "model": "app_quis.Categoria",
+        "pk": 4,
+        "fields": {
+            "nome": "Meio Ambiente e Cidadania"
+        }
+    },
+    {
+        "model": "app_quis.Categoria",
+        "pk": 5,
+        "fields": {
+            "nome": "Primeiros Socorros"
+        }
+    }
+]

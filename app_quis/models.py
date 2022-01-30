@@ -4,8 +4,8 @@ from django.db import models
 
 class Categoria(models.Model):
     nome = models.CharField(max_length=100)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
     class Meta:
         verbose_name_plural = 'Categorias'
     def to_dict(instance):
@@ -24,8 +24,8 @@ class Pergunta(models.Model):
     código = models.CharField(max_length=50, blank=True, null=True)
     enunciado = models.TextField(blank=True, null=False)
     id_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, blank=True, null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     def getAlternativas(self):
         relAlternativas = self.objects.get(id=self.id).relperguntaalternativa
@@ -48,8 +48,8 @@ class Pergunta(models.Model):
 
 class Alternativa(models.Model):
     conteudo = models.TextField(blank=True, null=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
     class Meta:
         verbose_name_plural = 'Alternativas'
     def to_dict(instance):
