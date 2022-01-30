@@ -1,0 +1,511 @@
+[
+    {
+        "model": "app_placas.Placa",
+        "pk": 51,
+        "fields":{
+            "imagem": "49-veiculos-grande-porte-mantenha-se-a-direita",
+            "codigo": null,
+            "descricao": "Veículos de grande porte, matenha-se à direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 50,
+        "fields":{
+            "imagem": "48-siga-em-frente",
+            "codigo": null,
+            "descricao": "Siga em frente",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 49,
+        "fields":{
+            "imagem": "47-proibido-transito-tratores-e-maquinas-obras",
+            "codigo": null,
+            "descricao": "Proibido trânsito de tratores e máquinas de obra",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 48,
+        "fields":{
+            "imagem": "46-proibido-transito-bicicletas",
+            "codigo": null,
+            "descricao": "Proibido trânsito de bicicletas",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 47,
+        "fields":{
+            "imagem": "45-transito-proibido-a-veiculos-de-tracao-animal",
+            "codigo": null,
+            "descricao": "Trrânsito proibido a veículos de tração animal",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 46,
+        "fields":{
+            "imagem": "44-transito-proibido-a-carros-de-mao",
+            "codigo": null,
+            "descricao": "Trânsito proibido a carros de mão",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 45,
+        "fields":{
+            "imagem": "43-circulacao-exclusiva-caminhoes",
+            "codigo": null,
+            "descricao": "Circulação exclusiva de caminhões",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 44,
+        "fields":{
+            "imagem": "42-proibido-transito-onibus",
+            "codigo": null,
+            "descricao": "Proibido trânsito de ônibus",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 43,
+        "fields":{
+            "imagem": "41-siga-em-frente-ou-a-direita",
+            "codigo": null,
+            "descricao": "Siga em frente ou à direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 42,
+        "fields":{
+            "imagem": "40-siga-em-frente-ou-a-esquerda",
+            "codigo": null,
+            "descricao": "Siga em frene ou à esquerda",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 41,
+        "fields":{
+            "imagem": "39-vire-a-direita",
+            "codigo": null,
+            "descricao": "Vire à direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 40,
+        "fields":{
+            "imagem": "38-vire-a-esquerda",
+            "codigo": null,
+            "descricao": "Vire à esquerda",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 39,
+        "fields":{
+            "imagem": "37-proibido-transito-vaiculos-automotores",
+            "codigo": null,
+            "descricao": "Proibido trânsito de veículos automotores",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 38,
+        "fields":{
+            "imagem": "36-proibido-transito-caminhoes",
+            "codigo": null,
+            "descricao": "Proibido trânsito de caminhões",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 37,
+        "fields":{
+            "imagem": "34-proibido-circulacao-motociclestas",
+            "codigo": null,
+            "descricao": "Proibida a circulação de motocicletas, motonetas e ciclomotores",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 36,
+        "fields":{
+            "imagem": "33-pedestres-a-esquerda-ciclistas-a-direita",
+            "codigo": null,
+            "descricao": "Pedestre à direita e ciclista à esquerda",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 35,
+        "fields":{
+            "imagem": "32-ciclista-a-esquerda-pedestres-direita",
+            "codigo": null,
+            "descricao": "Ciclista à esquerda e pedetre à direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 34,
+        "fields":{
+            "imagem": "31-passagem-obrigatoria",
+            "codigo": null,
+            "descricao": "Passagem obrigatória",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 33,
+        "fields":{
+            "imagem": "30-sentido-circulacao-via",
+            "codigo": null,
+            "descricao": "Sentido de circulação da via",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 32,
+        "fields":{
+            "imagem": "29-conserve-se-a-direita",
+            "codigo": null,
+            "descricao": "Conserve-se à direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 31,
+        "fields":{
+            "imagem": "35-proibido-mudar-faixa-direita-esquerda",
+            "codigo": null,
+            "descricao": "Proibido mudar de faixa da direita para a esquerda",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 30,
+        "fields":{
+            "imagem": "28-proibido-mudar-faixa-esquerda-direita",
+            "codigo": null,
+            "descricao": "Proibido mudar de faixa da esquerda para a direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 29,
+        "fields":{
+            "imagem": "27-proibido-ultrapassar",
+            "codigo": null,
+            "descricao": "Proibido ultrapassar",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 28,
+        "fields":{
+            "imagem": "25-ciclista-transite-a-direita",
+            "codigo": null,
+            "descricao": "Ciclista, transite à direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 27,
+        "fields":{
+            "imagem": "24-ciclista-transite-a-esquerda",
+            "codigo": null,
+            "descricao": "Ciclista, transite à esquerda",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 26,
+        "fields":{
+            "imagem": "23-circulacao-exclusiva-bicicletas",
+            "codigo": null,
+            "descricao": "Circulação exclusiva de bibliotecas",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 25,
+        "fields":{
+            "imagem": "22-uso-obrigatorio-correntes",
+            "codigo": null,
+            "descricao": "Uso obrigatório de corretes",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 24,
+        "fields":{
+            "imagem": "21-alfandega",
+            "codigo": null,
+            "descricao": "Alfândega",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 23,
+        "fields":{
+            "imagem": "20-proibido-acionar-buxina-ou-sinal-sonoro",
+            "codigo": null,
+            "descricao": "Proibido acionar buzina ou sinal sonoro",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 22,
+        "fields":{
+            "imagem": "19-estacionamento-regular",
+            "codigo": null,
+            "descricao": "Estacionamento regular",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 21,
+        "fields":{
+            "imagem": "26-proibido-parar-estacionar",
+            "codigo": null,
+            "descricao": "Proibido parar e estacionar",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 20,
+        "fields":{
+            "imagem": "18-proibido-estacionar",
+            "codigo": null,
+            "descricao": "Proibido estacionar",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 19,
+        "fields":{
+            "imagem": "16-sentido-circulacao-rotatoria",
+            "codigo": null,
+            "descricao": "Sentido de circulção na rotatória",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 18,
+        "fields":{
+            "imagem": "15-circulacao-exclusiva-onibus",
+            "codigo": null,
+            "descricao": "Circulação exclusiva de ônibus",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 17,
+        "fields":{
+            "imagem": "14-velocidade-maxima-permitida",
+            "codigo": null,
+            "descricao": "Velocidade máxmia permitida",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 16,
+        "fields":{
+            "imagem": "13-comprimento-maximo-permitido",
+            "codigo": null,
+            "descricao": "Comprimento máximo permitido",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 15,
+        "fields":{
+            "imagem": "12-peso-maximo-permitido-por-eixo",
+            "codigo": null,
+            "descricao": "Peso máximo permito por eixo",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 14,
+        "fields":{
+            "imagem": "17-proibido-retornar-a-direita",
+            "codigo": null,
+            "descricao": "Proibido virar à direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 13,
+        "fields":{
+            "imagem": "11-proibido-retornar-a-esquerda",
+            "codigo": null,
+            "descricao": "Proibido retornar à esquerda",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 12,
+        "fields":{
+            "imagem": "10-proibido-virar-a-direita",
+            "codigo": null,
+            "descricao": "Proibido virar à direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 11,
+        "fields":{
+            "imagem": "09-proibido-virar-a-esquerda",
+            "codigo": null,
+            "descricao": "Proibido virar à esquerda",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 10,
+        "fields":{
+            "imagem": "08-pedestre-ande-pela-direita",
+            "codigo": null,
+            "descricao": "Pedestre, ande pela direita",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 9,
+        "fields":{
+            "imagem": "07-pedestre-ande-pela-esquerda",
+            "codigo": null,
+            "descricao": "Pedestre, ande pela esquerda",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 8,
+        "fields":{
+            "imagem": "06-proibido-transito-pedestre",
+            "codigo": null,
+            "descricao": "Proibido trânsito de pedestre",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 7,
+        "fields":{
+            "imagem": "05-duplo-sentido-circulação",
+            "codigo": null,
+            "descricao": "Duplo sentido de circulação",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 6,
+        "fields":{
+            "imagem": "04-largura-maxima-permitida",
+            "codigo": null,
+            "descricao": "Largura máxima permitida",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 5,
+        "fields":{
+            "imagem": "50-peso-bruto-total-maximo-permitido",
+            "codigo": null,
+            "descricao": "Peso bruto máximo permitido",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 4,
+        "fields":{
+            "imagem": "03-altura-maxima-permitida",
+            "codigo": null,
+            "descricao": "Altura máxima permitida",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 3,
+        "fields":{
+            "imagem": "02-sentido-proibido",
+            "codigo": null,
+            "descricao": "Sentido proibido",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 2,
+        "fields":{
+            "imagem": "01-de-preferencia",
+            "codigo": null,
+            "descricao": "Dê a preferência",
+            "categoria": "reg"
+        } 
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 1,
+        "fields":{
+            "imagem": "00-parada-obrigatoria",
+            "codigo": null,
+            "descricao": "Parada obrigatória",
+            "categoria": "reg"}
+        } 
+]
