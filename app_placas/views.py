@@ -5,5 +5,7 @@ from .models import Placa
 
 
 def index(request):
-    placas = Placa.objects.all()
-    return render(request, 'app_placas/index.html', {'placas': placas})
+    data = dict()
+    data['regulamentacao'] = Placa.objects.filter(categoria='reg')
+    data['advertencia'] = Placa.objects.filter(categoria='adv')
+    return render(request, 'app_placas/index.html', data)

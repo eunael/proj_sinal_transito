@@ -26,12 +26,12 @@
 </div>
 <style>
     @keyframes fadeIn {
-        0% { opacity: 0; margin-left: 20px;}
+        0% { opacity: 0; margin-start: 20px;}
         100% { opacity: 1; } 
     }
     @keyframes fadeOut {
         0% { opacity: 1; } 
-        100% { opacity: 0; margin-left: 20px;}
+        100% { opacity: 0; margin-start: 20px;}
     }
     .fadeIn {
         animation: fadeIn .8s ease-in-out;
@@ -67,14 +67,14 @@
             {% endfor %}
         </div>
         
-        <div class="text-right d-none row" id="div-btns">
-            <div id="alerta" class="col-6 text-left invisible">
+        <div class="text-end d-none row" id="div-btns">
+            <div id="alerta" class="col-6 text-start invisible">
                 <span class="text-danger"><i class="fas fa-exclamation-circle"></i> Selecione uma alternativa.</span>
             </div>
-            <div class="col-6 text-right">
+            <div class="col-6 text-end">
                 <button type="button" id="btn-voltar" class="btn btn-danger d-none shadow">Voltar</button>
-                <!-- <button type="button" id="btn-pular" class="btn btn-secondary disabled ml-2">Pular</button> -->
-                <button type="button" id="btn-responder" class="btn btn-primary ml-2 shadow">Avançar</button>
+                <!-- <button type="button" id="btn-pular" class="btn btn-secondary disabled ms-2">Pular</button> -->
+                <button type="button" id="btn-responder" class="btn btn-primary ms-2 shadow">Avançar</button>
             </div>
         </div>
     </form>
