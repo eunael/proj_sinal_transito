@@ -1,0 +1,1 @@
+web: gunicorn proj_sinal_transito.wsgi --log-file -

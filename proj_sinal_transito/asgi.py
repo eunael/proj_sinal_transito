@@ -1,5 +1,5 @@
 """
-ASGI config for sinal_transito project.
+ASGI config for proj_sinal_transito project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sinal_transito.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proj_sinal_transito.settings')
 
 application = get_asgi_application()

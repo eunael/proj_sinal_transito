@@ -1,5 +1,5 @@
 """
-WSGI config for sinal_transito project.
+WSGI config for proj_sinal_transito project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sinal_transito.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proj_sinal_transito.settings')
 
 application = get_wsgi_application()
