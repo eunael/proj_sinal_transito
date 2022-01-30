@@ -6,7 +6,17 @@
 
 {% block content %}
 <div>
-    
+    <div class="row">
+        {% for p in placas %}
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
+                <div class="card h-100 p-4">
+                    <img src="{{ p.imagem.url }}" class="card-img-top">
+                </div>
+            </div>
+        {% empty %}
+            <p>No movies added.</p>
+        {% endfor %}
+    </div>
 </div>
 {% endblock content %}
 
