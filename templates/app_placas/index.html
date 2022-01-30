@@ -7,15 +7,12 @@
 {% block content %}
 <div>
     <div class="row">
-        {% for p in placas %}
-            <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
-                <div class="card h-100 p-4">
-                    <img src="{{ p.imagem.url }}" class="card-img-top">
-                </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="h-100 p-4 d-flex justify-content-around align-items-center">
+                <img src="../../static/image/placas/regulamentacao/00-parada-obrigatoria.png" style="max-width: 100px;" class="card-img-top">
+                <span class="w-50"><strong>Parada obrigatória</strong></span>
             </div>
-        {% empty %}
-            <p>No movies added.</p>
-        {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock content %}
