@@ -1,511 +1,1202 @@
 [
     {
         "model": "app_placas.Placa",
+        "pk": 121,
+        "fields": {
+            "imagem": "85-transito-de-tratores-e-maquinas-agriculas",
+            "codigo": null,
+            "descricao": "Trânsito de tratores e máquinas agriculas",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 120,
+        "fields": {
+            "imagem": "84-passagem-compartilhado-por-ciclistas-e-pedestres",
+            "codigo": null,
+            "descricao": "Passagem compartilhada por ciclista e pedestres",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 119,
+        "fields": {
+            "imagem": "83-passagem-sinalizada-de-ciclistas",
+            "codigo": null,
+            "descricao": "Passagem sinalizada de ciclista",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 118,
+        "fields": {
+            "imagem": "82-parada-obrigatoria-a-frente",
+            "codigo": null,
+            "descricao": "Parada obrigatória à frente",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 117,
+        "fields": {
+            "imagem": "81-semaforo-a-frente",
+            "codigo": null,
+            "descricao": "Semáforo à frente",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 116,
+        "fields": {
+            "imagem": "80-confluencia-a-direita",
+            "codigo": null,
+            "descricao": "Confluência à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 115,
+        "fields": {
+            "imagem": "78-comprimento-limitado",
+            "codigo": null,
+            "descricao": "Comprimento limitado",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 114,
+        "fields": {
+            "imagem": "77-peso-limitado-por-eixo",
+            "codigo": null,
+            "descricao": "Peso limitado por eixo",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 113,
+        "fields": {
+            "imagem": "76-peso-bruto-total-limitado",
+            "codigo": null,
+            "descricao": "Peso bruto total limitado",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 112,
+        "fields": {
+            "imagem": "75-transito-de-ciclistas",
+            "codigo": null,
+            "descricao": "Trânsito de ciclista",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 111,
+        "fields": {
+            "imagem": "74-projecao-de-cascalho",
+            "codigo": null,
+            "descricao": "Projeção de cascalho",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 110,
+        "fields": {
+            "imagem": "73-pista-escorregadia",
+            "codigo": null,
+            "descricao": "Pista escorregadia",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 109,
+        "fields": {
+            "imagem": "72-confluencia-a-esquerda",
+            "codigo": null,
+            "descricao": "Confluência à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 108,
+        "fields": {
+            "imagem": "71-intersecao-em-circulo",
+            "codigo": null,
+            "descricao": "Interseção em círculo",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 107,
+        "fields": {
+            "imagem": "70-juncoes-sucessivas-contrarias-primeira-a-esquerda",
+            "codigo": null,
+            "descricao": "Junções sucessivas sontrárias primeira à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 106,
+        "fields": {
+            "imagem": "68-rua-sem-saida",
+            "codigo": null,
+            "descricao": "Rua sem saída",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 105,
+        "fields": {
+            "imagem": "67-ventos-laterais",
+            "codigo": null,
+            "descricao": "Ventos laterais",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 104,
+        "fields": {
+            "imagem": "66-aeroporto",
+            "codigo": null,
+            "descricao": "Aeroporto",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 103,
+        "fields": {
+            "imagem": "65-area-com-deslisamento",
+            "codigo": null,
+            "descricao": "Área com deslizamento",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 102,
+        "fields": {
+            "imagem": "64-sentido-duplo",
+            "codigo": null,
+            "descricao": "Sentido duplo",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 101,
+        "fields": {
+            "imagem": "63-sentido-unico",
+            "codigo": null,
+            "descricao": "Sentido único",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 100,
+        "fields": {
+            "imagem": "62-juncoes-sucessivas-contrarias-primeira-a-esquerda",
+            "codigo": null,
+            "descricao": "Junções sucessivas contrárias primeira à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 98,
+        "fields": {
+            "imagem": "61-entroncamento-obliquo-a-direita",
+            "codigo": null,
+            "descricao": "Entroncamento oblíquo à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 97,
+        "fields": {
+            "imagem": "60-entroncamento-obliquo-a-esquerda",
+            "codigo": null,
+            "descricao": "Entroncamento oblíquo à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 96,
+        "fields": {
+            "imagem": "58-pista-dividida",
+            "codigo": null,
+            "descricao": "Pista dividida",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 95,
+        "fields": {
+            "imagem": "57-fim-de-pista-dupla",
+            "codigo": null,
+            "descricao": "Fim de pista dupla",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 94,
+        "fields": {
+            "imagem": "56-inicio-de-pista-dupla",
+            "codigo": null,
+            "descricao": "Início de pista dupla",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 93,
+        "fields": {
+            "imagem": "55-mao-dupla-adiante",
+            "codigo": null,
+            "descricao": "Mão dupla adiante",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 92,
+        "fields": {
+            "imagem": "54-obras",
+            "codigo": null,
+            "descricao": "Obras",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 91,
+        "fields": {
+            "imagem": "53-ponte-movel",
+            "codigo": null,
+            "descricao": "Ponte móvel",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 90,
+        "fields": {
+            "imagem": "52-bifurcacao-em-y",
+            "codigo": null,
+            "descricao": "bifurcação em Y",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 89,
+        "fields": {
+            "imagem": "51-intersecao-em-t",
+            "codigo": null,
+            "descricao": "Insterseção em T",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 88,
+        "fields": {
+            "imagem": "50-via-lateral-a-direita",
+            "codigo": null,
+            "descricao": "Via lateral à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 87,
+        "fields": {
+            "imagem": "48-cruz-de-santo-andre",
+            "codigo": null,
+            "descricao": "Cruz de Santo André",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 86,
+        "fields": {
+            "imagem": "47-passagem-de-nivel-com-barreira",
+            "codigo": null,
+            "descricao": "Passagem de nível com barreira",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 85,
+        "fields": {
+            "imagem": "46-passagem-de-nivel-sem-barreira",
+            "codigo": null,
+            "descricao": "Passagem de nível sem barreira",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 84,
+        "fields": {
+            "imagem": "45-ponte-estreita",
+            "codigo": null,
+            "descricao": "Ponte estreita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 83,
+        "fields": {
+            "imagem": "44-alargamento-de-pista-a-direita",
+            "codigo": null,
+            "descricao": "Alargamento de pista à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 82,
+        "fields": {
+            "imagem": "43-alargamento-de-pista-a-esquerda",
+            "codigo": null,
+            "descricao": "Alargamento de pista à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 81,
+        "fields": {
+            "imagem": "42-via-lateral-a-esquerda",
+            "codigo": null,
+            "descricao": "Via lateral à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 80,
+        "fields": {
+            "imagem": "41-cruzamento-de-vias",
+            "codigo": null,
+            "descricao": "Cruzamento de vias",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 79,
+        "fields": {
+            "imagem": "40-curva-em-s-a-direita",
+            "codigo": null,
+            "descricao": "Curva em S à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 78,
+        "fields": {
+            "imagem": "38-largura-limitada",
+            "codigo": null,
+            "descricao": "Largura limitada",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 77,
+        "fields": {
+            "imagem": "37-altura-limitada",
+            "codigo": null,
+            "descricao": "Altura limitada",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 76,
+        "fields": {
+            "imagem": "36-animais-selvagens",
+            "codigo": null,
+            "descricao": "Animais selvagens",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 75,
+        "fields": {
+            "imagem": "35-estreitamento-de-pista-a-direita",
+            "codigo": null,
+            "descricao": "Estreitamento de pista à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 74,
+        "fields": {
+            "imagem": "34-estreitamento-de-pista-a-esquerda",
+            "codigo": null,
+            "descricao": "Estreitamento de pista à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 73,
+        "fields": {
+            "imagem": "33-estreitamento-de-pista-ao-centro",
+            "codigo": null,
+            "descricao": "Estreitamento de pista ao centro",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 72,
+        "fields": {
+            "imagem": "32-curva-em-s-a-esquerda",
+            "codigo": null,
+            "descricao": "Curva em S a esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 71,
+        "fields": {
+            "imagem": "31-curva-acentuado-em-s-a-direita",
+            "codigo": null,
+            "descricao": "Curva acentuada em S à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 70,
+        "fields": {
+            "imagem": "30-curva-acentuada-em-s-a-esquerda",
+            "codigo": null,
+            "descricao": "Curva acentuada em S à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 69,
+        "fields": {
+            "imagem": "28-animais",
+            "codigo": null,
+            "descricao": "Animais",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 68,
+        "fields": {
+            "imagem": "27-criancas",
+            "codigo": null,
+            "descricao": "Crianças",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 67,
+        "fields": {
+            "imagem": "26-passagem-senalizada-de-escolares",
+            "codigo": null,
+            "descricao": "Passagem sinalizada de escolares",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 66,
+        "fields": {
+            "imagem": "25-aclive-acentuado",
+            "codigo": null,
+            "descricao": "Aclive acentuado",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 65,
+        "fields": {
+            "imagem": "24-declive-acentuado",
+            "codigo": null,
+            "descricao": "Declive acentuado",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 64,
+        "fields": {
+            "imagem": "23-depressao",
+            "codigo": null,
+            "descricao": "Depressão",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 63,
+        "fields": {
+            "imagem": "22-pista-sinuosa-a-direita",
+            "codigo": null,
+            "descricao": "Pista sinuosa à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 62,
+        "fields": {
+            "imagem": "21-pista-sinuosa-a-esquerda",
+            "codigo": null,
+            "descricao": "Pista sinuosa à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 61,
+        "fields": {
+            "imagem": "20-curva-a-direita",
+            "codigo": null,
+            "descricao": "Curva à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 60,
+        "fields": {
+            "imagem": "09-area-escolar",
+            "codigo": null,
+            "descricao": "Área escolar",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 59,
+        "fields": {
+            "imagem": "08-passagem-sinalizada-de-pedestres",
+            "codigo": null,
+            "descricao": "Passagem sinalizada de pedestres",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 58,
+        "fields": {
+            "imagem": "07-transito-de-pedestres",
+            "codigo": null,
+            "descricao": "Trânsito de pedestres",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 57,
+        "fields": {
+            "imagem": "06-saliencia-ou-lombada",
+            "codigo": null,
+            "descricao": "Saliência ou lombada",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 56,
+        "fields": {
+            "imagem": "05-pista-irregular",
+            "codigo": null,
+            "descricao": "Pista irregular",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 55,
+        "fields": {
+            "imagem": "04-bonde",
+            "codigo": null,
+            "descricao": "Bonde",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 54,
+        "fields": {
+            "imagem": "03-curva-a-esquerda",
+            "codigo": null,
+            "descricao": "Curva à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 53,
+        "fields": {
+            "imagem": "02-curva-acentuda-a-direita",
+            "codigo": null,
+            "descricao": "Curva acentuada à direita",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
+        "pk": 52,
+        "fields": {
+            "imagem": "01-curva-acentuada-a-esquerda",
+            "codigo": null,
+            "descricao": "Curva acentuada à esquerda",
+            "categoria": "adv"
+        }
+    },
+	{
+        "model": "app_placas.Placa",
         "pk": 51,
-        "fields":{
+        "fields": {
             "imagem": "49-veiculos-grande-porte-mantenha-se-a-direita",
             "codigo": null,
             "descricao": "Veículos de grande porte, matenha-se à direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 50,
-        "fields":{
+        "fields": {
             "imagem": "48-siga-em-frente",
             "codigo": null,
             "descricao": "Siga em frente",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 49,
-        "fields":{
+        "fields": {
             "imagem": "47-proibido-transito-tratores-e-maquinas-obras",
             "codigo": null,
             "descricao": "Proibido trânsito de tratores e máquinas de obra",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 48,
-        "fields":{
+        "fields": {
             "imagem": "46-proibido-transito-bicicletas",
             "codigo": null,
             "descricao": "Proibido trânsito de bicicletas",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 47,
-        "fields":{
+        "fields": {
             "imagem": "45-transito-proibido-a-veiculos-de-tracao-animal",
             "codigo": null,
             "descricao": "Trrânsito proibido a veículos de tração animal",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 46,
-        "fields":{
+        "fields": {
             "imagem": "44-transito-proibido-a-carros-de-mao",
             "codigo": null,
             "descricao": "Trânsito proibido a carros de mão",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 45,
-        "fields":{
+        "fields": {
             "imagem": "43-circulacao-exclusiva-caminhoes",
             "codigo": null,
             "descricao": "Circulação exclusiva de caminhões",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 44,
-        "fields":{
+        "fields": {
             "imagem": "42-proibido-transito-onibus",
             "codigo": null,
             "descricao": "Proibido trânsito de ônibus",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 43,
-        "fields":{
+        "fields": {
             "imagem": "41-siga-em-frente-ou-a-direita",
             "codigo": null,
             "descricao": "Siga em frente ou à direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 42,
-        "fields":{
+        "fields": {
             "imagem": "40-siga-em-frente-ou-a-esquerda",
             "codigo": null,
             "descricao": "Siga em frene ou à esquerda",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 41,
-        "fields":{
+        "fields": {
             "imagem": "39-vire-a-direita",
             "codigo": null,
             "descricao": "Vire à direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 40,
-        "fields":{
+        "fields": {
             "imagem": "38-vire-a-esquerda",
             "codigo": null,
             "descricao": "Vire à esquerda",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 39,
-        "fields":{
+        "fields": {
             "imagem": "37-proibido-transito-vaiculos-automotores",
             "codigo": null,
             "descricao": "Proibido trânsito de veículos automotores",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 38,
-        "fields":{
+        "fields": {
             "imagem": "36-proibido-transito-caminhoes",
             "codigo": null,
             "descricao": "Proibido trânsito de caminhões",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 37,
-        "fields":{
+        "fields": {
             "imagem": "34-proibido-circulacao-motociclestas",
             "codigo": null,
             "descricao": "Proibida a circulação de motocicletas, motonetas e ciclomotores",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 36,
-        "fields":{
+        "fields": {
             "imagem": "33-pedestres-a-esquerda-ciclistas-a-direita",
             "codigo": null,
             "descricao": "Pedestre à direita e ciclista à esquerda",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 35,
-        "fields":{
+        "fields": {
             "imagem": "32-ciclista-a-esquerda-pedestres-direita",
             "codigo": null,
             "descricao": "Ciclista à esquerda e pedetre à direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 34,
-        "fields":{
+        "fields": {
             "imagem": "31-passagem-obrigatoria",
             "codigo": null,
             "descricao": "Passagem obrigatória",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 33,
-        "fields":{
+        "fields": {
             "imagem": "30-sentido-circulacao-via",
             "codigo": null,
             "descricao": "Sentido de circulação da via",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 32,
-        "fields":{
+        "fields": {
             "imagem": "29-conserve-se-a-direita",
             "codigo": null,
             "descricao": "Conserve-se à direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 31,
-        "fields":{
+        "fields": {
             "imagem": "35-proibido-mudar-faixa-direita-esquerda",
             "codigo": null,
             "descricao": "Proibido mudar de faixa da direita para a esquerda",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 30,
-        "fields":{
+        "fields": {
             "imagem": "28-proibido-mudar-faixa-esquerda-direita",
             "codigo": null,
             "descricao": "Proibido mudar de faixa da esquerda para a direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 29,
-        "fields":{
+        "fields": {
             "imagem": "27-proibido-ultrapassar",
             "codigo": null,
             "descricao": "Proibido ultrapassar",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 28,
-        "fields":{
+        "fields": {
             "imagem": "25-ciclista-transite-a-direita",
             "codigo": null,
             "descricao": "Ciclista, transite à direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 27,
-        "fields":{
+        "fields": {
             "imagem": "24-ciclista-transite-a-esquerda",
             "codigo": null,
             "descricao": "Ciclista, transite à esquerda",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 26,
-        "fields":{
+        "fields": {
             "imagem": "23-circulacao-exclusiva-bicicletas",
             "codigo": null,
             "descricao": "Circulação exclusiva de bibliotecas",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 25,
-        "fields":{
+        "fields": {
             "imagem": "22-uso-obrigatorio-correntes",
             "codigo": null,
             "descricao": "Uso obrigatório de corretes",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 24,
-        "fields":{
+        "fields": {
             "imagem": "21-alfandega",
             "codigo": null,
             "descricao": "Alfândega",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 23,
-        "fields":{
+        "fields": {
             "imagem": "20-proibido-acionar-buxina-ou-sinal-sonoro",
             "codigo": null,
             "descricao": "Proibido acionar buzina ou sinal sonoro",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 22,
-        "fields":{
+        "fields": {
             "imagem": "19-estacionamento-regular",
             "codigo": null,
             "descricao": "Estacionamento regular",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 21,
-        "fields":{
+        "fields": {
             "imagem": "26-proibido-parar-estacionar",
             "codigo": null,
             "descricao": "Proibido parar e estacionar",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 20,
-        "fields":{
+        "fields": {
             "imagem": "18-proibido-estacionar",
             "codigo": null,
             "descricao": "Proibido estacionar",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 19,
-        "fields":{
+        "fields": {
             "imagem": "16-sentido-circulacao-rotatoria",
             "codigo": null,
             "descricao": "Sentido de circulção na rotatória",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 18,
-        "fields":{
+        "fields": {
             "imagem": "15-circulacao-exclusiva-onibus",
             "codigo": null,
             "descricao": "Circulação exclusiva de ônibus",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 17,
-        "fields":{
+        "fields": {
             "imagem": "14-velocidade-maxima-permitida",
             "codigo": null,
             "descricao": "Velocidade máxmia permitida",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 16,
-        "fields":{
+        "fields": {
             "imagem": "13-comprimento-maximo-permitido",
             "codigo": null,
             "descricao": "Comprimento máximo permitido",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 15,
-        "fields":{
+        "fields": {
             "imagem": "12-peso-maximo-permitido-por-eixo",
             "codigo": null,
             "descricao": "Peso máximo permito por eixo",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 14,
-        "fields":{
+        "fields": {
             "imagem": "17-proibido-retornar-a-direita",
             "codigo": null,
             "descricao": "Proibido virar à direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 13,
-        "fields":{
+        "fields": {
             "imagem": "11-proibido-retornar-a-esquerda",
             "codigo": null,
             "descricao": "Proibido retornar à esquerda",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 12,
-        "fields":{
+        "fields": {
             "imagem": "10-proibido-virar-a-direita",
             "codigo": null,
             "descricao": "Proibido virar à direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 11,
-        "fields":{
+        "fields": {
             "imagem": "09-proibido-virar-a-esquerda",
             "codigo": null,
             "descricao": "Proibido virar à esquerda",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 10,
-        "fields":{
+        "fields": {
             "imagem": "08-pedestre-ande-pela-direita",
             "codigo": null,
             "descricao": "Pedestre, ande pela direita",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 9,
-        "fields":{
+        "fields": {
             "imagem": "07-pedestre-ande-pela-esquerda",
             "codigo": null,
             "descricao": "Pedestre, ande pela esquerda",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 8,
-        "fields":{
+        "fields": {
             "imagem": "06-proibido-transito-pedestre",
             "codigo": null,
             "descricao": "Proibido trânsito de pedestre",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 7,
-        "fields":{
+        "fields": {
             "imagem": "05-duplo-sentido-circulação",
             "codigo": null,
             "descricao": "Duplo sentido de circulação",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 6,
-        "fields":{
+        "fields": {
             "imagem": "04-largura-maxima-permitida",
             "codigo": null,
             "descricao": "Largura máxima permitida",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 5,
-        "fields":{
+        "fields": {
             "imagem": "50-peso-bruto-total-maximo-permitido",
             "codigo": null,
             "descricao": "Peso bruto máximo permitido",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 4,
-        "fields":{
+        "fields": {
             "imagem": "03-altura-maxima-permitida",
             "codigo": null,
             "descricao": "Altura máxima permitida",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 3,
-        "fields":{
+        "fields": {
             "imagem": "02-sentido-proibido",
             "codigo": null,
             "descricao": "Sentido proibido",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 2,
-        "fields":{
+        "fields": {
             "imagem": "01-de-preferencia",
             "codigo": null,
             "descricao": "Dê a preferência",
             "categoria": "reg"
-        } 
+        }
     },
 	{
         "model": "app_placas.Placa",
         "pk": 1,
-        "fields":{
+        "fields": {
             "imagem": "00-parada-obrigatoria",
             "codigo": null,
             "descricao": "Parada obrigatória",
-            "categoria": "reg"}
-        } 
+            "categoria": "reg"
+        }
+    }
 ]
