@@ -33,6 +33,7 @@ def index(request):
         if len(alterns_ids)>0:
             obj = {
                 'pergunta': perg,
+                'categoria': perg.id_categoria.nome,
                 'alternativas': alterns,
                 'index': count
             }
@@ -46,18 +47,6 @@ def index(request):
 
 def enviaSimulado(request):
     if request.method == 'POST':
-        '''if request.POST.get('name') != "" and request.POST.get('email') != "" and request.POST.get('subject') != "" and request.POST.get('message') != "":
-            blog = Blog.objects.filter(id=request.POST.get('id_blog')).first()
-            contact = Contact()
-            contact.blog_id = blog
-            contact.name = request.POST.get('name')
-            contact.email = request.POST.get('email')
-            contact.subject = request.POST.get('subject')
-            contact.message = request.POST.get('message')
-            contact.save()
-
-            return redirect('blog_index')
-        return HttpResponse("Você não preencheu algum campo 🤔")'''
         data = dict()
         list_keys = list(request.POST.dict().keys())
         list_vals = list(request.POST.dict().values())

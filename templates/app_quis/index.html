@@ -50,14 +50,17 @@
         <div id="container-questoes" actual-question="1">
             {% for questao in questoes %}
                 <div class="d-none questao w-100" id="questao-1">
-                    <input type="hidden" name="perg-{{questao.index}}" value="{{questao.pergunta.id}}">
-                    <p><strong>Questão {{ questao.index }}</strong></p>
-                    <p>
-                        {{ questao.pergunta.enunciado }}
-                    </p>
+                    <div class="p-3 pb-1 rounded" style="background-color: #f6f6f6;">
+                        <input type="hidden" name="perg-{{questao.index}}" value="{{questao.pergunta.id}}">
+                        <p><strong>Questão {{ questao.index }}</strong> - {{questao.categoria}}</p>
+                        <p>
+                            {{ questao.pergunta.enunciado }}
+                        </p>
+                    </div>
+                    <hr>
                     <div>
                         {% for altern in questao.alternativas %}
-                            <p>
+                            <p class="text-wrap">
                                 <input type="radio" name="resp-{{questao.index}}" id="" value="{{altern.id}}">
                                 <label for="">{{ altern.conteudo }}</label>
                             </p>

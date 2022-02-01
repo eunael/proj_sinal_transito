@@ -24,7 +24,6 @@ class Pergunta(models.Model):
     id_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, blank=True, null=True)
     código = models.CharField(max_length=50, blank=True, null=True)
     enunciado = models.TextField(blank=True, null=False)
-    imagem = models.ImageField(upload_to='perguntas/', default=None)
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
 

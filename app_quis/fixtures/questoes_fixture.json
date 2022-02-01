@@ -1,0 +1,102 @@
+[
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 1,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0001",
+            "enunciado": "A prestação dos exames para obtenção da Carteira Nacional de Habilitação só poderá ser requerida pelo candidato que seja alfabetizado e tenha completado?",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 2,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0002",
+            "enunciado": "Ao Departamento de Trânsito (DETRAN), órgão executivo, cabe, entre outras, a atribuição de?",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 3,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0003",
+            "enunciado": "O condutor de veículo automotor habilitado na categoria “B”, poderá dirigir veículo?",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 4,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0004",
+            "enunciado": "É proibido a todo condutor de veículo:",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 5,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0005",
+            "enunciado": "É dever de todo condutor de veículo?",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 6,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0006",
+            "enunciado": "É dever de todo condutor de veículo:",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 7,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0007",
+            "enunciado": "O órgão máximo normativo do Sistema Nacional de Trânsito é?",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 8,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0008",
+            "enunciado": "É proibido o uso da buzina no perímetro urbano no horário compreendido entre?",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 9,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0009",
+            "enunciado": "Retirar o veículo do local do acidente, no qual haja vítima, sem autorização da autoridade de trânsito?",
+            "imagem": null
+        }
+    },
+    {
+        "model": "app_quis.Pergunta",
+        "pk": 10,
+        "fields": {
+            "id_categoria": 2,
+            "código": "0010",
+            "enunciado": "O condutor que tiver sua Carteira Nacional de Habilitação cassada poderá se candidatar à reabilitação após?",
+            "imagem": null
+        }
+    }
+]

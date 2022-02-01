@@ -1,0 +1,292 @@
+[
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 1,
+        "fields": {
+            "conteudo": "dezessete anos"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 2,
+        "fields": {
+            "conteudo": "dezesseis anos, com autorização dos pais"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 3,
+        "fields": {
+            "conteudo": "vinte e um anos"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 4,
+        "fields": {
+            "conteudo": "dezoito anos"
+        }
+    },
+
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 5,
+        "fields": {
+            "conteudo": "sugerir modificações sobre a Legislação de Trânsito"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 6,
+        "fields": {
+            "conteudo": "expedir a Carteira Nacional de Habilitação"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 7,
+        "fields": {
+            "conteudo": "estabelecer os modelos das placas de veículo"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 8,
+        "fields": {
+            "conteudo": "regulamentar o serviço de aluguel de veículos"
+        }
+    },
+
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 9,
+        "fields": {
+            "conteudo": "motorizado de 2 rodas"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 10,
+        "fields": {
+            "conteudo": "motorizado, cujo peso máximo não exceda a 3.500 quilogramas e que não tenha mais de 8 lugares, sem contar o condutor"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 11,
+        "fields": {
+            "conteudo": "de transporte de carga, cujo peso máximo exceda a 3.500 quilogramas"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 12,
+        "fields": {
+            "conteudo": "de transporte coletivo de passageiros e que tenha mais de 8 lugares, sem contar o condutor"
+        }
+    },
+    
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 13,
+        "fields": {
+            "conteudo": "dirigir sem estar devidamente habilitado ou autorizado na forma da lei"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 14,
+        "fields": {
+            "conteudo": " parar para dar passagem a veículo precedido de batedor"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 15,
+        "fields": {
+            "conteudo": "parar antes de entrar em via preferencial"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 16,
+        "fields": {
+            "conteudo": "dar passagem, pela esquerda, quando solicitado"
+        }
+    },
+    
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 17,
+        "fields": {
+            "conteudo": "nas vias urbanas, deslocar com antecedência o veículo para a faixa mais à direita da via quando for entrar para a esquerda"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 18,
+        "fields": {
+            "conteudo": "circular com o veículo somente pela faixa da direita"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 19,
+        "fields": {
+            "conteudo": "portar e exibir, quando solicitado pela autoridade de trânsito, os documentos exigidos por lei ou regulamento"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 20,
+        "fields": {
+            "conteudo": "ultrapassar outro veículo em movimento somente pela direita"
+        }
+    },
+    
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 21,
+        "fields": {
+            "conteudo": "o Departamento Nacional de Trânsito - Denatran"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 22,
+        "fields": {
+            "conteudo": "o Conselho Nacional de Trânsito - Contran"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 23,
+        "fields": {
+            "conteudo": "o Ministério da Justiça"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 24,
+        "fields": {
+            "conteudo": "o Departamento Estadual de Trânsito - Detran"
+        }
+    },
+    
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 25,
+        "fields": {
+            "conteudo": "22 (vinte e duas) horas e 06 (seis) horas"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 26,
+        "fields": {
+            "conteudo": "20 (vinte) horas e 7 (sete) horas"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 27,
+        "fields": {
+            "conteudo": "18 (dezoito) horas e 06 (seis) horas"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 28,
+        "fields": {
+            "conteudo": "18 (dezoito) horas e 22 (vinte e duas) horas"
+        }
+    },
+    
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 29,
+        "fields": {
+            "conteudo": "só é permitido para prestar socorro à vítima do acidente"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 30,
+        "fields": {
+            "conteudo": "só é permitido se estiver atrapalhando o trânsito"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 31,
+        "fields": {
+            "conteudo": "é permitido ficando à critério dos condutores envolvidos no acidente"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 32,
+        "fields": {
+            "conteudo": "é proibido em qualquer circunstância"
+        }
+    },
+    
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 33,
+        "fields": {
+            "conteudo": "mostrar, sempre que solicitado pela autoridade de trânsito ou seus agentes, os documentos que forem exigidos por lei ou regulamentação"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 34,
+        "fields": {
+            "conteudo": "circular com o veículo somente pela faixa da direita"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 35,
+        "fields": {
+            "conteudo": "ultrapassar outro veículo em movimento somente pela direita"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 36,
+        "fields": {
+            "conteudo": "fazer sinal regulamentar de braços apenas quando for entrar para a direita"
+        }
+    },
+    
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 37,
+        "fields": {
+            "conteudo": "pela velocidade alta nela desenvolvida"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 38,
+        "fields": {
+            "conteudo": "por faixas interceptando e distribuindo o trânsito dela saído, com acessos especiais"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 39,
+        "fields": {
+            "conteudo": "por bloqueios permitindo o trânsito livre sem interseções em nível com acessos especiais, sem acessibilidade direta aos lotes lindeiros e sem travessia de pedestres em nível"
+        }
+    },
+    {
+        "model": "app_quis.Alternativa",
+        "pk": 40,
+        "fields": {
+            "conteudo": "por faixas de acesso às áreas de estacionamento"
+        }
+    }
+
+]
