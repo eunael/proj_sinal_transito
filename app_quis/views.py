@@ -66,13 +66,14 @@ def enviaSimulado(request):
             relAltern = relPerg.get(id_alternativa=resposta['id_alternativa'])
             relAltCerta = relPerg.get(certa=True)
 
-            pergunta = relPerg.first().id_pergunta
-            alternativa = relAltern.id_alternativa
-            alt_certa = relAltCerta.id_alternativa
+            pergunta = relPerg.first().id_pergunta.enunciado
+            alternativa = relAltern.id_alternativa.conteudo
+            alt_certa = relAltCerta.id_alternativa.conteudo
+            if relAltern.id_alternativa==relAltCerta.id_alternativa: alt_certa = None
             gabarito.append({
-                'pergunta': pergunta.enunciado,
-                'alternativa': alternativa.conteudo,
-                'alter_certa': alt_certa.conteudo,
+                'pergunta': pergunta,
+                'alternativa': alternativa,
+                'alter_certa': alt_certa,
                 'check': relAltern.certa,
                 'index': count
             })

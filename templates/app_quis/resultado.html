@@ -58,9 +58,13 @@
                         {% endif %}
                             
                     </p>
-                    <p>
-                        <span class="text-success"><i class="fas fa-check"></i> {{ item.alter_certa }}</span>
-                    </p>
+                    
+                    {% if item.alter_certa %}
+                        <p>
+                            <span class="text-success"><i class="fas fa-check"></i> {{ item.alter_certa }}</span>
+                        </p>
+                    {% endif %}
+                        
                 </div>
                 <hr>
             </div>
