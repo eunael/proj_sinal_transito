@@ -60,10 +60,14 @@
                     <hr>
                     <div>
                         {% for altern in questao.alternativas %}
-                            <p class="text-wrap">
-                                <input type="radio" name="resp-{{questao.index}}" id="" value="{{altern.id}}">
-                                <label for="">{{ altern.conteudo }}</label>
-                            </p>
+                            <div class="text-wrap">
+                                <p class="">
+                                    <label for="altern-{{altern.id}}">
+                                        <input class="me-1" type="radio" name="resp-{{questao.index}}" id="altern-{{altern.id}}" value="{{altern.id}}">
+                                        {{ altern.conteudo }}
+                                    </label>
+                                </p>
+                            </div>
                         {% endfor %}
                     </div>
                 </div>
@@ -71,10 +75,10 @@
         </div>
         
         <div class="text-end d-none row" id="div-btns">
-            <div id="alerta" class="col-6 text-start invisible">
+            <div id="alerta" class="col-sm-6 col-12 text-start invisible mb-3">
                 <span class="text-danger"><i class="fas fa-exclamation-circle"></i> Selecione uma alternativa.</span>
             </div>
-            <div class="col-6 text-end">
+            <div class="col-sm-6 col-12 text-end">
                 <button type="button" id="btn-voltar" class="btn btn-danger d-none shadow">Voltar</button>
                 <!-- <button type="button" id="btn-pular" class="btn btn-secondary disabled ms-2">Pular</button> -->
                 <button type="button" id="btn-responder" class="btn btn-primary ms-2 shadow">Avançar</button>

@@ -18,23 +18,25 @@
         100% { opacity: 0; margin-start: 20px;}
     }
     .fadeIn {
-        animation: fadeIn .8s ease-in-out;
+        animation: fadeIn .6s ease-in-out;
     }
     .fadeOut {
-        animation: fadeOut .8s ease-in-out;
+        animation: fadeOut .6s ease-in-out;
     }
 </style>
 <div>
     <div id="container-questoes" actual-question="1" type-view="a"> <!-- a / all -->
         <div class="fadeIn questao w-100 pt-2 pb-2" id="questao-0">
             <div class="row">
-                <div class="col">
-                    <p><span class="text-success"><i class="fas fa-check-circle"></i> {{ resultado.certas }} corretas</span></p>
-                    <p><span class="text-danger"><i class="fas fa-times-circle"></i> {{ resultado.erradas }} erradas</span></p>
+                <div class="col-8 d-flex justify-content-center">
+                    <div class="text-start w-25">
+                        <p><span class="text-success"><i class="fas fa-check-circle"></i> {{ resultado.certas }} corretas</span></p>
+                        <p><span class="text-danger"><i class="fas fa-times-circle"></i> {{ resultado.erradas }} erradas</span></p>
+                    </div>
                 </div>
-                <div class="col">
-                    <span class="d-flex {% if resultado.porcento >= 70 %}text-success{% else %}text-danger{% endif %}">
-                        <h1>{{ resultado.porcento }}</h1>%
+                <div class="col-4">
+                    <span class="d-flex justify-content-start {% if resultado.porcento >= 50 %}text-success{% else %}text-danger{% endif %}">
+                        <h1 class="display-4"><strong>{{ resultado.porcento }}</strong></h1>%
                     </span>
                 </div>
             </div>
@@ -90,7 +92,7 @@
                 setTimeout(() => {
                     quest.classList.add('d-none')
                     quest.classList.remove('fadeOut')
-                }, 795)
+                }, 595)
             }
         })
         const nextQuest = questoes[indexNextQuest-1]
@@ -102,13 +104,13 @@
                 btnVoltar.classList.add('fadeOut')
                 setTimeout(()=>{
                     btnVoltar.classList.add('d-none')
-                }, 795)
+                }, 595)
             } else if(btnVoltar.classList.contains('d-none')) {
                 btnVoltar.classList.remove('d-none')
                 btnVoltar.classList.remove('fadeOut')
                 btnVoltar.classList.add('fadeIn')
             }
-        }, 795)
+        }, 595)
 
         divQuestoes.setAttribute('actual-question', `${indexNextQuest}`)
     })
@@ -123,7 +125,7 @@
                 setTimeout(() => {
                     quest.classList.add('d-none')
                     quest.classList.remove('fadeOut')
-                }, 795)
+                }, 595)
             }
         })
         const prevQuest = questoes[indexPrevQuest-1]
@@ -135,13 +137,13 @@
                 btnVoltar.classList.add('fadeOut')
                 setTimeout(()=>{
                     btnVoltar.classList.add('d-none')
-                }, 795)
+                }, 595)
             } else if(btnVoltar.classList.contains('d-none')) {
                 btnVoltar.classList.remove('d-none')
                 btnVoltar.classList.remove('fadeOut')
                 btnVoltar.classList.add('fadeIn')
             }
-        }, 795)
+        }, 595)
 
         divQuestoes.setAttribute('actual-question', `${indexPrevQuest}`)
     })
@@ -187,7 +189,7 @@
             btnVoltar.classList.add('fadeOut')
             setTimeout(() => {
                 btnVoltar.classList.add('d-none')
-            }, 795)
+            }, 595)
         }
         const questoes = Array.from(document.getElementsByClassName('questao'))
         questoes.forEach(qst => {

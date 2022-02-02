@@ -50,7 +50,7 @@
         "fields": {
             "id_categoria": 2,
             "código": "0006",
-            "enunciado": "É dever de todo condutor de veículo:"
+            "enunciado": "O órgão máximo normativo do Sistema Nacional de Trânsito é?"
         }
     },
     {
@@ -59,7 +59,7 @@
         "fields": {
             "id_categoria": 2,
             "código": "0007",
-            "enunciado": "O órgão máximo normativo do Sistema Nacional de Trânsito é?"
+            "enunciado": "É proibido o uso da buzina no perímetro urbano no horário compreendido entre?"
         }
     },
     {
@@ -68,7 +68,7 @@
         "fields": {
             "id_categoria": 2,
             "código": "0008",
-            "enunciado": "É proibido o uso da buzina no perímetro urbano no horário compreendido entre?"
+            "enunciado": "Retirar o veículo do local do acidente, no qual haja vítima, sem autorização da autoridade de trânsito?"
         }
     },
     {
@@ -77,7 +77,7 @@
         "fields": {
             "id_categoria": 2,
             "código": "0009",
-            "enunciado": "Retirar o veículo do local do acidente, no qual haja vítima, sem autorização da autoridade de trânsito?"
+            "enunciado": "Todo condutor deve?"
         }
     },
     {
@@ -86,7 +86,7 @@
         "fields": {
             "id_categoria": 2,
             "código": "0010",
-            "enunciado": "O condutor que tiver sua Carteira Nacional de Habilitação cassada poderá se candidatar à reabilitação após?"
+            "enunciado": "Segundo a classificação do Código de Trânsito Brasileiro, uma via de trânsito rápido é caracterizada?"
         }
     }
 ]
