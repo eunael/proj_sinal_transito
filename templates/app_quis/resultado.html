@@ -27,14 +27,12 @@
 <div>
     <div id="container-questoes" actual-question="1" type-view="a"> <!-- a / all -->
         <div class="fadeIn questao w-100 pt-2 pb-2" id="questao-0">
-            <div class="row">
-                <div class="col-8 d-flex justify-content-center">
-                    <div class="text-start w-25">
-                        <p><span class="text-success"><i class="fas fa-check-circle"></i> {{ resultado.certas }} corretas</span></p>
-                        <p><span class="text-danger"><i class="fas fa-times-circle"></i> {{ resultado.erradas }} erradas</span></p>
-                    </div>
+            <div class="row d-flex align-items-center">
+                <div class="col">
+                    <p><span class="text-success"><i class="fas fa-check-circle"></i> {{ resultado.certas }} corretas</span></p>
+                    <p><span class="text-danger"><i class="fas fa-times-circle"></i> {{ resultado.erradas }} erradas</span></p>
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <span class="d-flex justify-content-start {% if resultado.porcento >= 50 %}text-success{% else %}text-danger{% endif %}">
                         <h1 class="display-4"><strong>{{ resultado.porcento }}</strong></h1>%
                     </span>

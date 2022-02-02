@@ -23,7 +23,7 @@ def index(request):
     perguntas = Pergunta.objects.all()
     perguntas_ids = list(map(lambda x: x.id, perguntas))
     shuffle(perguntas_ids)
-    perguntas_ids = perguntas_ids[0:10]
+    perguntas_ids = perguntas_ids[0:30]
     count = 1
     for idx, id_p in enumerate(perguntas_ids):
         perg = perguntas.get(pk=id_p)
@@ -39,9 +39,7 @@ def index(request):
             }
             list_perg.append(obj)
             count += 1
-    data['questoes'] = list_perg[0:30]
-    
-    # return HttpResponse(view_obj(list_perg))
+    data['questoes'] = list_perg
 
     return render(request, 'app_quis/index.html', data)
 
