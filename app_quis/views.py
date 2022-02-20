@@ -55,8 +55,9 @@ def enviaSimulado(request):
             if('perg' in key):
                 qst_resp.append({'id_pergunta': str(list_vals[i])})
             elif('resp' in key):
-                qst_resp[int(key[-1])-1]['id_alternativa'] = list_vals[i]
-        
+                posicao = int(str(key).split('-')[-1])-1
+                qst_resp[posicao]['id_alternativa'] = list_vals[i]
+                
         count = 1
         resultado = {'certas': 0, 'erradas': 0}
         for resposta in qst_resp:
