@@ -24,7 +24,7 @@ def index(request):
     perguntas_ids = list(map(lambda x: x.id, perguntas))
     shuffle(perguntas_ids)
     perguntas_ids = perguntas_ids[0:30]
-    count = 1
+    count = 0
     for idx, id_p in enumerate(perguntas_ids):
         perg = perguntas.get(pk=id_p)
         alterns_ids = list(RelPerguntaAlternativa.objects.filter(id_pergunta=perg.id).values_list('id_alternativa', flat=True))
